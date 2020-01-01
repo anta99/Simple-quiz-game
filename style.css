@@ -1,0 +1,44 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box; 
+  }
+  li{
+    transition: 1s;
+    margin:10px 0px;
+    padding:10px;
+  }
+  input{
+    margin-right:20px;
+  }
+  .correct{
+    background-color:green;
+  }
+  .wrong{
+    background-color: red;
+  }
+  #loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    top:0;
+    left:0;
+    text-align: center;
+  }
+  #loader h1{
+    font-size: 60px;
+    padding-top:45vh;
+    animation: blinking 2s infinite ease-in-out;
+  }
+  @keyframes blinking{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
